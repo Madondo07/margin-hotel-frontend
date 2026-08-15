@@ -1,56 +1,48 @@
-# Shadcn Landing Page Template
+# Margin Hotel — Frontend
 
-## <a href="https://ui.shadcn.com/" target="_blank">Shadcn</a> + <a href="https://nextjs.org/" target="_blank">Next.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
+Frontend for the Margin Hotel Management System, developed as part of the **Applications Development Practice 3 (ADP372S)** capstone group project.
 
-### This is a project conversion <a href="https://github.com/leoMirandaa/shadcn-vue-landing-page" target="_blank">Shadcn-Vue</a> to NextJS
+This repository covers the **guest-facing booking page** and (later) the **internal staff admin portal**, consuming the REST API exposed by the Margin Hotel backend (Java Spring Boot).
 
-![Alt text](./public/demo-img.jpg)
+## Related Repositories
 
-## Sections
+- Backend: `margin-hotel-management` — [link] (https://github.com/Madondo07/hotel_management_system)
 
-- [x] Navbar
-- [x] Sidebar(mobile)
-- [x] Hero
-- [x] Sponsors
-- [x] Benefits
-- [x] Features
-- [x] Testimonials
-- [x] Team
-- [x] Community
-- [x] Contact
-- [x] Pricing
-- [x] Frequently Asked Questions(FAQ)
-- [x] Services
-- [x] Footer
+## Tech Stack
 
-## Features
+- [Next.js](https://nextjs.org/) (App Router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [next-themes](https://github.com/pacocoursey/next-themes) (light/dark mode)
 
-- [x] Fully Responsive Design
-- [x] User Friendly Navigation
-- [x] Dark Mode
+Base structure built from the open-source [shadcn-landing-page](https://github.com/nobruf/shadcn-landing-page) template, trimmed and customized for this project.
 
-## How to install
+## Prerequisites
 
-1. Clone this repositoy:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- npm (comes with Node.js)
+- Git
 
+## Getting Started
+
+1. **Clone the repository**
 ```bash
-git clone https://github.com/nobruf/shadcn-landing-page.git
+   git clone <this-repo-url>
+   cd margin-hotel-frontend
 ```
 
-2. Go into project
-
+2. **Install dependencies**
 ```bash
-cd shadcn-landing-page
+   npm install
 ```
 
-3. Install dependencies
-
+3. **Run the development server**
 ```bash
-npm install
+   npm run dev
 ```
 
-4. Run project
+4. **Open the app**
+   Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-```bash
-npm run dev
-```
+## Project Structure
