@@ -16,27 +16,27 @@ export const HeroSection = () => {
             <span className="mr-2 text-primary">
               <Badge>New</Badge>
             </span>
-            <span> Design is out now! </span>
+            <span> New booking online! </span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
             <h1>
-              Experience the
+              Welcome to
               <span className="text-transparent px-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                Shadcn
+                Margin Hotel
               </span>
-              landing page
+              your stay, your comfort, our priority.
             </h1>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-            {`We're more than just a tool, we're a community of passionate
-            creators. Get access to exclusive resources, tutorials, and support.`}
+            {`Come and experience the perfect blend of comfort, luxury, and convenience at Margin Hotel. 
+            Book your stay today and indulge in an unforgettable experience.`}
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
-              Get Started
+              Book Now
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
 
@@ -46,10 +46,10 @@ export const HeroSection = () => {
               className="w-5/6 md:w-1/4 font-bold"
             >
               <Link
-                href="https://github.com/nobruf/shadcn-landing-page.git"
+                href="#services"
                 target="_blank"
               >
-                Github respository
+                Our Rooms
               </Link>
             </Button>
           </div>
@@ -66,7 +66,7 @@ export const HeroSection = () => {
                 ? "/hero-image-light.jpeg"
                 : "/hero-image-dark.jpeg"
             }
-            alt="dashboard"
+            alt="Margin Hotel"
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
