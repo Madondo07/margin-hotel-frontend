@@ -42,7 +42,7 @@ export const Navbar = () => {
           <Logo className="text-[0.8rem] sm:text-sm" markClassName="size-7" />
         </Link>
 
-        {/* Desktop */}
+              {/* Desktop */}
         <nav aria-label="Main" className="hidden lg:flex items-center gap-9">
           {routeList.map(({ href, label }) => (
             <Link key={href} href={href} className={linkClass}>
@@ -53,6 +53,7 @@ export const Navbar = () => {
 
         <div className="hidden lg:flex items-center gap-3">
           <ToggleTheme className="w-auto text-ivory/80 hover:bg-white/10 hover:text-gold" />
+          <AuthButtons />
           <Button asChild variant="gold" size="brand" className="h-10 px-6">
             <Link href="/book">Book Now</Link>
           </Button>
@@ -72,16 +73,15 @@ export const Navbar = () => {
               </Button>
             </SheetTrigger>
 
-              <AuthButtons
-                layout="stack"
-                onNavigate={() => setIsOpen(false)}
-              />
-
-              <ToggleTheme />
-            </SheetFooter>
-          </SheetContent>
-        </Sheet>
-      </div>
+            <SheetContent side="left" className="flex flex-col justify-between">
+              <div>
+                <SheetHeader className="mb-4">
+                  <SheetTitle>
+                    <Link href="/" onClick={() => setIsOpen(false)}>
+                      <Logo />
+                    </Link>
+                  </SheetTitle>
+                </SheetHeader>
 
                 <nav aria-label="Main" className="flex flex-col">
                   {routeList.map(({ href, label }) => (
@@ -97,9 +97,16 @@ export const Navbar = () => {
                 </nav>
               </div>
 
-      <div className="hidden lg:flex items-center gap-2">
-        <AuthButtons />
-        <ToggleTheme />
+              <SheetFooter className="flex-col gap-4 sm:flex-col">
+                <AuthButtons
+                  layout="stack"
+                  onNavigate={() => setIsOpen(false)}
+                />
+                <ToggleTheme />
+              </SheetFooter>
+            </SheetContent>
+          </Sheet>
+        </div>
       </div>
     </header>
   );
